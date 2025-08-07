@@ -1,33 +1,33 @@
-import Link from 'next/link';
-import { Github, Linkedin, Mail, Phone } from 'lucide-react';
+import Link from "next/link";
+import { Github, Linkedin, Mail, Phone } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const footerLinks = [
     {
-      title: 'Company',
+      title: "Company",
       links: [
-        { name: 'About Us', href: '/about' },
-        { name: 'Careers', href: '/careers' },
-        { name: 'Press', href: '/press' },
+        { name: "About Us", href: "/about" },
+        { name: "Careers", href: "/careers" },
+        { name: "Press", href: "/press" },
       ],
     },
     {
-      title: 'Support',
+      title: "Support",
       links: [
-        { name: 'Help Center', href: '/help' },
-        { name: 'Contact Us', href: '/contact' },
-        { name: 'Terms of Service', href: '/terms' },
-        { name: 'Privacy Policy', href: '/privacy' },
+        { name: "Help Center", href: "/help" },
+        { name: "Contact Us", href: "/contact" },
+        { name: "Terms of Service", href: "/terms" },
+        { name: "Privacy Policy", href: "/privacy" },
       ],
     },
     {
-      title: 'Account',
+      title: "Account",
       links: [
-        { name: 'Manage Profile', href: '/profile' },
-        { name: 'Subscription', href: '/subscription' },
-        { name: 'Billing', href: '/billing' },
+        { name: "Manage Profile", href: "/profile" },
+        { name: "Subscription", href: "/subscription" },
+        { name: "Billing", href: "/billing" },
       ],
     },
   ];
@@ -39,7 +39,7 @@ const Footer = () => {
           {/* Brand */}
           <div className="space-y-4">
             <div className="netflix-gradient rounded px-3 py-1 text-2xl font-bold text-white w-fit">
-              StreamFlix
+              Mikeflix
             </div>
             <p className="text-gray-400 text-sm">
               Your premium streaming destination for unlimited entertainment.
@@ -89,7 +89,7 @@ const Footer = () => {
         <div className="border-t border-gray-800 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-gray-400 text-sm">
-              © {currentYear} StreamFlix. All rights reserved.
+              © {currentYear} Mikeflix. All rights reserved.
             </div>
             <div className="text-gray-400 text-sm flex items-center space-x-4">
               <span>Developed by</span>

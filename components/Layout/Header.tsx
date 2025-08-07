@@ -1,10 +1,10 @@
-'use client';
+"use client";
 
-import Link from 'next/link';
-import { useState } from 'react';
-import { Search, Bell, User, Menu, X } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
+import Link from "next/link";
+import { useState } from "react";
+import { Search, Bell, User, Menu, X } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -12,17 +12,17 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from '@/components/ui/dropdown-menu';
+} from "@/components/ui/dropdown-menu";
 
 const Header = () => {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const navigation = [
-    { name: 'Home', href: '/' },
-    { name: 'Movies', href: '/movies' },
-    { name: 'TV Shows', href: '/tv-shows' },
-    { name: 'My List', href: '/watchlist' },
+    { name: "Home", href: "/" },
+    { name: "Movies", href: "/movies" },
+    { name: "TV Shows", href: "/tv-shows" },
+    { name: "My List", href: "/watchlist" },
   ];
 
   return (
@@ -32,7 +32,7 @@ const Header = () => {
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
             <div className="netflix-gradient rounded px-3 py-1 text-2xl font-bold text-white">
-              StreamFlix
+              Mikeflix
             </div>
           </Link>
 
@@ -82,7 +82,11 @@ const Header = () => {
             </div>
 
             {/* Notifications */}
-            <Button variant="ghost" size="icon" className="hidden md:inline-flex">
+            <Button
+              variant="ghost"
+              size="icon"
+              className="hidden md:inline-flex"
+            >
               <Bell className="h-4 w-4" />
             </Button>
 
@@ -119,7 +123,11 @@ const Header = () => {
               className="md:hidden"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             >
-              {isMobileMenuOpen ? <X className="h-4 w-4" /> : <Menu className="h-4 w-4" />}
+              {isMobileMenuOpen ? (
+                <X className="h-4 w-4" />
+              ) : (
+                <Menu className="h-4 w-4" />
+              )}
             </Button>
           </div>
         </div>
